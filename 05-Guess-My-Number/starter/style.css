@@ -55,7 +55,11 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+h2{
+  text-align: center;
+  font-size: 10px;
+  padding: 15px;
+}
 .number {
   background: #eee;
   color: #333;
@@ -116,4 +120,33 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+@media (max-width:991px){
+  h2{
+    display: none;
+  }
+}
+@media (max-width:475px) {
+  .between{
+    display: none;
+  }
+  .message{
+    font-size: 10px;
+  }
+  .label-score{
+    font-size: 10px;
+  }
+  .label-highscore{
+    font-size: 10px;
+  }
+}
+@media (max-width:629px) {
+  .message{
+    margin-bottom: 3rem;
+    height: 3rem;
+    font-size: 15px;
+  }
+  .again{
+    font-size: 15px;
+  }
 }
